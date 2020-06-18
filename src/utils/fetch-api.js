@@ -12,13 +12,13 @@
 import { notification } from 'antd';
 import merge from 'lodash/merge';
 import applyURIFilter from 'src/utils/apply-url-filter';
+import URL from 'src/constants/url.constant';
 
 const mandatory = () => {
 	return Promise.reject(new Error('Fetch API Missing parameter!'));
 };
 
-const API_URL = process.env.API_URL;
-
+const { API_URL } = URL;
 export default async ({ url, options, params } = mandatory(), cb = f => f) => {
 	try {
 		const defaultOptions = {

@@ -6,6 +6,6 @@
 * Created: 2019-02-14 16:27:58
 *------------------------------------------------------- */
 export default {
-	API_URL: process.env.API_URL || 'http://localhost:3005/api/v1',
+	API_URL: process.env.API_URL || 'https://pokeapi.co/api/v2',
 	WEB_URL: process.env.WEB_URL || 'http://localhost:3334',
 };
