@@ -7,6 +7,7 @@ This boilerplate is updated with:
 - [React 16.13+](https://reactjs.org)
 - [Antd 4x](https://ant.design/)
 - Less - css module
+- Redux, Redux-saga
 - Eslint
 
 ## Installing and Running
