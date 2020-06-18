@@ -1,5 +1,5 @@
 # Boilerplate webpack antd less and redux
-A boilerplate for Reactjs app using webpack, antd, less.
+A boilerplate for Reactjs app using webpack, antd, less, redux, redux-saga.
 
 ## Features
 This boilerplate is updated with:
