@@ -1,8 +1,8 @@
 /* eslint-disable no-nested-ternary */
 /* --------------------------------------------------------
-* Author Trần Đức Tiến
-* Email tientran0019@gmail.com
-* Phone 0972970075
+* Author Ngô An Ninh
+* Email ninh.uit@gmail.com
+* Phone 0867185407
 *
 * Created: 2020-03-01 17:38:42
 *------------------------------------------------------- */

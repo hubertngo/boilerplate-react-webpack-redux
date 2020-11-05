@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unused-state */
 /* --------------------------------------------------------
-* Author Trần Đức Tiến
-* Email tientran0019@gmail.com
-* Phone 0972970075
+* Author Ngô An Ninh
+* Email ninh.uit@gmail.com
+* Phone 0867185407
 *
 * Created: 2019-09-04 00:03:29
 *------------------------------------------------------- */
