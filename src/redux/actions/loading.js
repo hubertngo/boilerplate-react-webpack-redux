@@ -5,21 +5,12 @@
  *
  * Created: 2017-07-20 17:59:39
  *-------------------------------------------------------*/
+import { createAction } from 'typesafe-actions';
 
-export function toggleLoader() {
-	return {
-		type: 'TOGGLE_LOADING',
-	};
-}
+const MODULE_NAME = 'Loading';
 
-export function startLoader() {
-	return {
-		type: 'START_LOADING',
-	};
-}
+export const toggleLoader = createAction(`[${MODULE_NAME}] toggle loading`)();
 
-export function stopLoader() {
-	return {
-		type: 'STOP_LOADING',
-	};
-}
+export const startLoader = createAction(`[${MODULE_NAME}] start loading`)();
+
+export const stopLoader = createAction(`[${MODULE_NAME}] stop loading`)();

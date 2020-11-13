@@ -6,22 +6,22 @@
 * Created: 2018-01-13 18:13:59
 *------------------------------------------------------- */
 import { REQUEST_ERROR } from 'src/redux/actions/type';
-
+import { getType } from 'typesafe-actions';
 import { notification } from 'antd';
+import * as actions from 'src/redux/actions/loading';
 
 export const initialState = false;
 
-export default function (state = initialState, action) {
+console.log('actions', actions);
+
+export default (state = initialState, action) => {
 	switch (action.type) {
-		case 'TOGGLE_LOADING':
+		case getType(actions.toggleLoader):
 			return !state;
-
-		case 'START_LOADING':
+		case getType(actions.startLoader):
 			return true;
-
-		case 'STOP_LOADING':
+		case getType(actions.stopLoader):
 			return false;
-
 		case REQUEST_ERROR: {
 			if (process.browser) {
 				if (action.payload !== 'TOKEN_INVALID') {
@@ -38,4 +38,4 @@ export default function (state = initialState, action) {
 		default:
 			return state;
 	}
-}
+};
