@@ -10,8 +10,6 @@ import React, { useEffect, useState } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-
-import { Link } from 'react-router-dom';
 import { getList as getListPokemon } from 'src/redux/actions/pokemon';
 
 import { Table } from 'antd';
@@ -53,7 +51,6 @@ const paginationConfig = {
 };
 
 const HomePage = ({ store: { pokemonList }, action }) => {
-	const [page, setPage] = useState(1);
 	const [filter, setFilter] = useState({
 		offset: 0,
 		limit: 10,
@@ -66,7 +63,7 @@ const HomePage = ({ store: { pokemonList }, action }) => {
 
 	useEffect(() => {
 		handleGetPokemon();
-	}, [page]);
+	}, []);
 
 	const handleTableChange = (pagination, filters, sorter) => {
 		const newFilter = {
@@ -80,8 +77,8 @@ const HomePage = ({ store: { pokemonList }, action }) => {
 
 	return (
 		<div className={styles.root}>
-			<h1>Navigation One</h1>
-			<h2>Pokemon List Example</h2>
+			<h1>Home</h1>
+			<h2>Pokemon List Example load data from redux</h2>
 			<Table
 				columns={columns}
 				size="small"

@@ -12,8 +12,6 @@ import * as actions from 'src/redux/actions/loading';
 
 export const initialState = false;
 
-console.log('actions', actions);
-
 export default (state = initialState, action) => {
 	switch (action.type) {
 		case getType(actions.toggleLoader):
